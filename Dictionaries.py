@@ -32,3 +32,42 @@ print(thisdict)
 
 thisdict.pop("Model")  # The pop() method removes the item with the specified key name
 print(thisdict)
+
+thisdict.popitem()  # The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead)
+print(thisdict)
+
+del thisdict['Year']  # The del keyword removes the item with the specified key name
+print(thisdict)
+
+thisdict.clear()
+print(thisdict)
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+
+mydict = thisdict.copy()  # Make a copy of a dictionary with the copy() method:
+print(mydict)
+
+# nested dictionaries
+
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+print(myfamily)
+
+dict_1 = dict(brand = "Hyundai", model = "creta", year = 2019)  # using dict constructor
+print(dict_1)
